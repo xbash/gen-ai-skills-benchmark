@@ -1,0 +1,26 @@
+{
+  "description": "Overhead A/B/C",
+  "runs": [
+    {
+      "condition": "A_EMPTY",
+      "repetitions": 1,
+      "workspace": "empty",
+      "agents": "none",
+      "prompt": "research_base.txt"
+    },
+    {
+      "condition": "B_AGENTS_ONLY",
+      "repetitions": 1,
+      "workspace": "agents_only",
+      "agents": "baseline",
+      "prompt": "research_base.txt"
+    },
+    {
+      "condition": "C_FULL",
+      "repetitions": 1,
+      "workspace": "full",
+      "agents": "baseline",
+      "prompt": "research_base.txt"
+    }
+  ]
+}

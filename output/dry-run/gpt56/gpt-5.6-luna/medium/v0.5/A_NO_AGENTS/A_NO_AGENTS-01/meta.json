@@ -1,0 +1,12 @@
+{
+  "experiment": "v0.5",
+  "condition": "A_NO_AGENTS",
+  "run_id": "A_NO_AGENTS-01",
+  "workspace_mode": "full",
+  "agents_variant": "none",
+  "prompt_file": "research_base.txt",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "started_at": "2026-09-25T00:34:05.934748-03:00",
+  "dry_run": true
+}

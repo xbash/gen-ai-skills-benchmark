@@ -1,0 +1,3 @@
+Utiliza la skill deep-research para investigar estrategias de reducción de contexto en agentes de IA. Antes de investigar, identifica el archivo que define la skill y qué auxiliares necesitas cargar. No modifiques archivos.
+
+Al final agrega exactamente una línea `TRACE_JSON:` seguida por un JSON compacto con las claves: `agents_md_seen` (bool), `deep_research_used` (bool), `repository_files_used` (lista), `auxiliary_skill_files_used` (lista), `external_sources_count` (entero), `primary_sources_count` (entero). No incluyas secretos ni contenido de archivos.

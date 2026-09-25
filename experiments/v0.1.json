@@ -1,0 +1,40 @@
+{
+  "description": "Smoke/routing/research/negative-control/explicit-skill",
+  "runs": [
+    {
+      "condition": "P0",
+      "repetitions": 1,
+      "workspace": "full",
+      "agents": "baseline",
+      "prompt": "v01_p0.txt"
+    },
+    {
+      "condition": "P1",
+      "repetitions": 1,
+      "workspace": "full",
+      "agents": "baseline",
+      "prompt": "v01_p1.txt"
+    },
+    {
+      "condition": "P2",
+      "repetitions": 1,
+      "workspace": "full",
+      "agents": "baseline",
+      "prompt": "v01_p2.txt"
+    },
+    {
+      "condition": "P3",
+      "repetitions": 1,
+      "workspace": "full",
+      "agents": "baseline",
+      "prompt": "v01_p3.txt"
+    },
+    {
+      "condition": "P4",
+      "repetitions": 1,
+      "workspace": "full",
+      "agents": "baseline",
+      "prompt": "v01_p4.txt"
+    }
+  ]
+}

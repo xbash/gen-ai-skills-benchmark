@@ -1,0 +1,26 @@
+{
+  "description": "Skill routing stability",
+  "runs": [
+    {
+      "condition": "R1_FREE",
+      "repetitions": 3,
+      "workspace": "full",
+      "agents": "baseline",
+      "prompt": "routing_implicit.txt"
+    },
+    {
+      "condition": "R2_EXPLICIT",
+      "repetitions": 3,
+      "workspace": "full",
+      "agents": "baseline",
+      "prompt": "routing_explicit.txt"
+    },
+    {
+      "condition": "R3_ROUTED",
+      "repetitions": 3,
+      "workspace": "full",
+      "agents": "routed",
+      "prompt": "routing_implicit.txt"
+    }
+  ]
+}

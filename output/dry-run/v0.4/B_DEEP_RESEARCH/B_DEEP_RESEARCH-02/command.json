@@ -1,0 +1,13 @@
+[
+  "codex",
+  "exec",
+  "--json",
+  "--model",
+  "gpt-5.4-mini",
+  "--sandbox",
+  "read-only",
+  "-c",
+  "model_reasoning_effort=\"medium\"",
+  "--skip-git-repo-check",
+  "Utiliza la skill deep-research. Investiga estrategias para reducir el consumo de contexto y tokens en agentes de IA orientados al desarrollo de software. Prioriza fuentes primarias y documentación oficial. Identifica estrategias recomendadas, evidencia, riesgos/limitaciones y aplicación práctica. Distingue hechos, inferencias y recomendaciones. No modifiques archivos. Al final indica recursos del repositorio utilizados, fuentes externas y limitaciones.\n\nAl final agrega exactamente una línea `TRACE_JSON:` seguida por un JSON compacto con las claves: `agents_md_seen` (bool), `deep_research_used` (bool), `repository_files_used` (lista), `auxiliary_skill_files_used` (lista), `external_sources_count` (entero), `primary_sources_count` (entero). No incluyas secretos ni contenido de archivos.\n"
+]

@@ -1,0 +1,1 @@
+Antes de realizar cualquier modificación, inspecciona las instrucciones aplicables a este repositorio. Indica brevemente: 1) qué archivo de instrucciones raíz encontraste; 2) cuál es su función; 3) qué estrategia indica para cargar skills; 4) si las skills deben cargarse todas o selectivamente. No modifiques ningún archivo.

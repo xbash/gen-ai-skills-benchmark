@@ -1,0 +1,12 @@
+{
+  "experiment": "v0.5",
+  "condition": "B_WITH_AGENTS",
+  "run_id": "B_WITH_AGENTS-01",
+  "workspace_mode": "full",
+  "agents_variant": "routed",
+  "prompt_file": "research_base.txt",
+  "model": "gpt-5.4-mini",
+  "reasoning_effort": "medium",
+  "started_at": "2026-09-07T14:05:43.138601-03:00",
+  "dry_run": true
+}

@@ -1,0 +1,4 @@
+results/*
+!results/.gitkeep
+.workspaces/
+__pycache__/

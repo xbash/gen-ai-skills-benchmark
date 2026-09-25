@@ -1,0 +1,3 @@
+Investiga estrategias para reducir el consumo de contexto y tokens en agentes de IA utilizados para desarrollo de software. Antes de comenzar: identifica únicamente los recursos del repositorio realmente necesarios; utiliza el contexto mínimo suficiente; no modifiques archivos. Al finalizar incluye Trazabilidad de contexto con los archivos realmente utilizados.
+
+Al final agrega exactamente una línea `TRACE_JSON:` seguida por un JSON compacto con las claves: `agents_md_seen` (bool), `deep_research_used` (bool), `repository_files_used` (lista), `auxiliary_skill_files_used` (lista), `external_sources_count` (entero), `primary_sources_count` (entero). No incluyas secretos ni contenido de archivos.

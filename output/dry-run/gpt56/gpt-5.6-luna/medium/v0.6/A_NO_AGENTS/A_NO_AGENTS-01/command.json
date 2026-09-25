@@ -1,0 +1,17 @@
+[
+  "cmd.exe",
+  "/d",
+  "/s",
+  "/c",
+  "C:\\Users\\xbash\\AppData\\Roaming\\npm\\codex.CMD",
+  "exec",
+  "--json",
+  "--model",
+  "gpt-5.6-luna",
+  "--sandbox",
+  "read-only",
+  "-c",
+  "model_reasoning_effort=\"medium\"",
+  "--skip-git-repo-check",
+  "-"
+]

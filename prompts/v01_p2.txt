@@ -1,0 +1,3 @@
+Investiga estrategias para reducir contexto y tokens en agentes de IA para desarrollo de software sin degradar significativamente la calidad. Aplica las instrucciones procedimentales pertinentes del repositorio cuando correspondan. Entrega hallazgos, evidencia, limitaciones y trazabilidad. No modifiques archivos.
+
+Al final agrega exactamente una línea `TRACE_JSON:` seguida por un JSON compacto con las claves: `agents_md_seen` (bool), `deep_research_used` (bool), `repository_files_used` (lista), `auxiliary_skill_files_used` (lista), `external_sources_count` (entero), `primary_sources_count` (entero). No incluyas secretos ni contenido de archivos.

@@ -1,0 +1,20 @@
+{
+  "description": "Evaluacion de carga progresiva y trazabilidad con y sin AGENTS.md",
+  "stop_on_failure": true,
+  "runs": [
+    {
+      "condition": "A_NO_AGENTS",
+      "repetitions": 2,
+      "workspace": "full",
+      "agents": "none",
+      "prompt": "evaluation_progressive_loading.txt"
+    },
+    {
+      "condition": "B_WITH_AGENTS",
+      "repetitions": 2,
+      "workspace": "full",
+      "agents": "routed",
+      "prompt": "evaluation_progressive_loading.txt"
+    }
+  ]
+}

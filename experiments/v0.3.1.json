@@ -1,0 +1,12 @@
+{
+  "description": "R3 confirmation",
+  "runs": [
+    {
+      "condition": "R3_ROUTED",
+      "repetitions": 5,
+      "workspace": "full",
+      "agents": "routed",
+      "prompt": "routing_implicit.txt"
+    }
+  ]
+}

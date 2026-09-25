@@ -1,0 +1,11 @@
+{
+  "description": "Piloto exploratorio de reanudación local: orden ABBA, dos corridas por condición",
+  "timeout_seconds": 180,
+  "stop_on_failure": true,
+  "runs": [
+    {"condition":"A_NO_AGENTS_FIRST","repetitions":1,"workspace":"full","agents":"none","prompt":"resume_project.txt"},
+    {"condition":"B_RESUME_FIRST","repetitions":1,"workspace":"full","agents":"resume","prompt":"resume_project.txt"},
+    {"condition":"B_RESUME_SECOND","repetitions":1,"workspace":"full","agents":"resume","prompt":"resume_project.txt"},
+    {"condition":"A_NO_AGENTS_SECOND","repetitions":1,"workspace":"full","agents":"none","prompt":"resume_project.txt"}
+  ]
+}

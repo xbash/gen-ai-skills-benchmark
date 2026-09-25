@@ -1,0 +1,13 @@
+[
+  "c:\\Users\\xbash\\.vscode\\extensions\\openai.chatgpt-26.917.62051-win32-x64\\bin\\windows-x86_64\\codex.EXE",
+  "exec",
+  "--json",
+  "--model",
+  "gpt-5.6-luna",
+  "--sandbox",
+  "read-only",
+  "-c",
+  "model_reasoning_effort=\"medium\"",
+  "--skip-git-repo-check",
+  "Evalua la estrategia de carga progresiva del repositorio para una tarea de ingenieria de software.\n\nObjetivo: determinar que contexto minimo deberia cargarse para revisar un cambio pequeno en un script de automatizacion, preservando trazabilidad, validacion y bajo consumo de contexto.\n\nLee solo los archivos del repositorio que sean necesarios. Identifica los archivos consultados y explica por que fueron suficientes. No modifiques archivos, no ejecutes comandos destructivos y no solicites investigacion externa.\n\nEntrega:\n1. recomendacion de carga minima;\n2. archivos omitidos y motivo;\n3. riesgos de omision o sobrecarga de contexto;\n4. validaciones estaticas y funcionales que quedarian pendientes;\n5. limitaciones de la evaluacion.\n\nDistingue hechos observados, inferencias y recomendaciones. No inventes resultados ni capacidades.\n\nAl final agrega exactamente una linea `TRACE_JSON:` seguida de un JSON compacto con las claves: `agents_md_seen` (bool), `deep_research_used` (bool), `repository_files_used` (lista), `auxiliary_skill_files_used` (lista), `external_sources_count` (entero), `primary_sources_count` (entero). No incluyas secretos ni contenido de archivos.\n"
+]

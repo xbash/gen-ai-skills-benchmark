@@ -1,0 +1,13 @@
+{
+  "description": "Smoke aislado posterior a la corrección de skills y cache",
+  "stop_on_failure": true,
+  "runs": [
+    {
+      "condition": "A_NO_AGENTS",
+      "repetitions": 1,
+      "workspace": "full",
+      "agents": "none",
+      "prompt": "evaluation_progressive_loading.txt"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Efecto de solicitar deep-research explicitamente en el entorno personal",
+  "stop_on_failure": true,
+  "runs": [
+    {
+      "condition": "A_BASELINE",
+      "repetitions": 3,
+      "workspace": "full",
+      "agents": "routed",
+      "prompt": "research_base.txt"
+    },
+    {
+      "condition": "B_DEEP_RESEARCH",
+      "repetitions": 3,
+      "workspace": "full",
+      "agents": "routed",
+      "prompt": "research_explicit_skill.txt"
+    }
+  ]
+}

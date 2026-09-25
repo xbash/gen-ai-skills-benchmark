@@ -1,0 +1,1 @@
+Quiero investigar estrategias para reducir contexto y tokens al trabajar con agentes de IA en desarrollo de software sin degradar significativamente la calidad. Antes de investigar: identifica recursos pertinentes del repositorio, cuáles utilizarías, cuáles no y por qué. No investigues todavía. No modifiques archivos.

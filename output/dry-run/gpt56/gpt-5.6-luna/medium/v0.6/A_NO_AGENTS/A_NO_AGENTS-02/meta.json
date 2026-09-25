@@ -1,0 +1,12 @@
+{
+  "experiment": "v0.6",
+  "condition": "A_NO_AGENTS",
+  "run_id": "A_NO_AGENTS-02",
+  "workspace_mode": "full",
+  "agents_variant": "none",
+  "prompt_file": "evaluation_progressive_loading.txt",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "started_at": "2026-09-25T00:42:08.247716-03:00",
+  "dry_run": true
+}
