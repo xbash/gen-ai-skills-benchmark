@@ -3,13 +3,13 @@
   "cohort_id": "gpt56",
   "required_files": ["AGENTS.md", "README.md"],
   "codex_command": "codex",
-  "model": "gpt-5.6-luna",
+  "model": "gpt-5.6-terra",
   "reasoning_effort": "medium",
   "sandbox": "read-only",
   "timeout_seconds": 1200,
   "keep_workspaces": false,
   "judge": {
-    "model": "gpt-5.6-luna",
+    "model": "gpt-5.6-terra",
     "reasoning_effort": "medium",
     "timeout_seconds": 900
   }

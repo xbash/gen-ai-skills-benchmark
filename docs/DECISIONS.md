@@ -1,5 +1,33 @@
 # Decisiones vigentes
 
+> **Actualizacion 2026-09-26.** Estas decisiones reemplazan cualquier estado
+> operativo contradictorio que aparezca mas abajo.
+
+12. Usar `gpt-5.6-terra` con `medium` como productor y juez de referencia.
+    La eleccion viene de los pilotos v0.7/v0.8 y es exploratoria, no una
+    afirmacion universal de superioridad.
+13. Tratar la comparacion de esfuerzos Terra como evidencia descriptiva: low
+    privilegia tiempo/tokens; medium obtuvo la Q mas alta del piloto; high no
+    mejoro la Q observada frente a medium.
+14. Conservar `v0.5` Terra como cohorte exploratoria de AGENTS. No afirmar que
+    AGENTS ahorra tokens o tiempo: las medias estan afectadas por A05 y B02
+    activo investigacion externa/deep research.
+15. `v0.9-agents-effect-controlled` completo con cinco repeticiones por
+    condicion y controles de fuentes satisfechos. En esta tarea, AGENTS aumento
+    tokens y tiempo en medias y medianas; Q promedio fue ligeramente menor y Q
+    mediana igual.
+16. La respuesta queda acotada a la tarea, repositorio, Terra/medium,
+    sandbox read-only y prompt controlado de v0.9. No generalizar a otras
+    tareas o modelos. Si se requiere una recomendacion para otro dominio,
+    disenar una cohorte especifica.
+17. Mantener `encoding='utf-8'` en el productor de `runner.py`; fue necesario
+    para que Codex aceptara `research_base.txt` en Windows. El intento fallido
+    permanece separado bajo `results/_attempts/`.
+18. No ejecutar nuevas corridas que consuman creditos sin una autorizacion
+    explicita posterior a este handoff. El dry-run no es evidencia experimental.
+
+## Registro historico previo (no usar para el estado actual)
+
 Fecha de corte: 2026-09-25.
 
 1. Mantener resultados separados por cohorte, modelo, esfuerzo, experimento, condición y repetición. Nunca sobrescribir un `meta.json`.

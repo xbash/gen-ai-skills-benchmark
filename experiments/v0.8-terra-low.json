@@ -1,0 +1,13 @@
+{
+  "description": "Comparacion de esfuerzo Terra low",
+  "stop_on_failure": true,
+  "runs": [
+    {
+      "condition": "A_NO_AGENTS",
+      "repetitions": 2,
+      "workspace": "full",
+      "agents": "none",
+      "prompt": "evaluation_progressive_loading.txt"
+    }
+  ]
+}

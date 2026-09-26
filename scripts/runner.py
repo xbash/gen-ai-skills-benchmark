@@ -307,6 +307,7 @@ def onerun(c,en,cond,idx,mode,agents,pf,dry=False):
                 cwd=ws,
                 input=prompt,
                 text=True,
+                encoding='utf-8',
                 stdout=out,
                 stderr=err,
                 timeout=int(c.get('timeout_seconds', 1200)),

@@ -1,5 +1,55 @@
 # Contexto de continuidad
 
+> **Estado vigente al 2026-09-26.** Esta seccion es canonica para reanudar. El
+> contenido posterior describe el corte historico 2026-09-25 y no debe
+> prevalecer sobre esta actualizacion.
+
+## Actualizacion 2026-09-26
+
+- Harness: `C:\rutinas-local\gen-ai-skills-root\gen-ai-skills-benchmark`.
+  Repositorio evaluado: `C:\rutinas-local\gen-ai-skills-root\gen-ai-skills`.
+- Configuracion vigente: cohorte `gpt56`, productor y juez `gpt-5.6-terra`,
+  esfuerzo `medium`, sandbox `read-only`.
+- El comando de prechequeo que paso en el contexto correcto fue
+  `powershell.exe -ExecutionPolicy Bypass -NoProfile -File .\run.ps1 doctor`;
+  confirmo `codex-cli 0.157.0` y sesion ChatGPT autenticada. El contexto no
+  elevado habia reportado `Not logged in`; no mezclar ambos contextos.
+
+### Evidencia nueva
+
+- Seleccion de modelo/esfuerzo: con la misma tarea `A_NO_AGENTS`, Terra/medium
+  tuvo `n=2`, Q promedio `12.00`, 191301 tokens y 54.7 s. Luna/medium tuvo
+  `n=3`, Q promedio `11.00`, 302742 tokens y 74.5 s. Es evidencia descriptiva.
+- Terra por esfuerzo: low (`n=2`, Q `9.50`, 115694 tokens, 32.2 s), medium
+  (`n=2`, Q `12.00`, 191301 tokens, 54.7 s) y high (`n=2`, Q `10.00`, 195985
+  tokens, 66.5 s). Terra/medium quedo como referencia; no es una conclusion
+  generalizable.
+- `v0.5` con Terra/medium completo: A sin AGENTS (`n=5`, 451489 tokens, 93.1 s,
+  Q `11.20`) y B con AGENTS (`n=5`, 447691 tokens, 77.2 s, Q `11.40`). La
+  revision individual muestra que A05 (974130 tokens, 209.9 s) domina la media;
+  las medianas fueron A=292903 tokens/63.7 s/Q11 y B=419937 tokens/76.3 s/Q12.
+  B02 activo `deep_research_used=true`. Esta cohorte no prueba ahorro causal.
+- El primer productor Terra de `v0.5` fallo por entrada no UTF-8; se archivo en
+  `results/_attempts/v0.5/`. `scripts/runner.py` ahora usa
+  `encoding='utf-8'` en `subprocess.run`; `py_compile`, reanudacion y las diez
+  corridas posteriores pasaron con `exit_code=0`.
+- `v0.9-agents-effect-controlled` completo: cinco repeticiones por condicion,
+  diez productores y diez jueces validos, todos `exit_code=0`. Todas las
+  trazas cumplieron `deep_research_used=false`, `external_sources_count=0` y
+  `primary_sources_count=0`. A sin AGENTS: 205616 tokens promedio, 51.5 s,
+  Q=10.20; B con AGENTS: 329825 tokens, 69.8 s, Q=9.80. Medianas: A
+  174279 tokens/42.0 s/Q10; B 305312 tokens/71.1 s/Q10.
+
+### Artefactos de esta sesion
+
+- `benchmark.config.json`, `scripts/runner.py`.
+- `experiments/v0.8-terra-low.json`, `experiments/v0.8-terra-high.json`,
+  `experiments/v0.9-agents-effect-controlled.json`.
+- `prompts/agents_effect_controlled.txt`.
+- `results/summary.md`, `results/summary.csv`, `results/gpt56/gpt-5.6-terra/`.
+
+## Registro historico previo (no usar para el estado actual)
+
 Fecha de corte: 2026-09-25.
 
 ## Propósito y rutas
