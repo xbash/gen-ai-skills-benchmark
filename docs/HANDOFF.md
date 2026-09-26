@@ -46,6 +46,18 @@ pregunta experimental nueva y autorización explícita.
 5. Regenerar resúmenes con `analyze` solo cuando esté autorizado; informar
    siempre condición, n, `exit_code`, métricas y limitaciones.
 
+## Auditoría de cierre
+
+- Cambios presentes al cierre: `AGENTS.md`, `README.md`, `docs/CONTEXT.md`,
+  `docs/DECISIONS.md`, `docs/HANDOFF.md` y la organización histórica bajo
+  `docs/archivados/`.
+- Verificado: rutas de continuidad críticas, ausencia de bloques históricos
+  duplicados, `git diff --check`, UTF-8 sin BOM, LF y newline final en los tres
+  documentos de continuidad.
+- No se ejecutaron benchmarks, `doctor`, dry-runs ni `analyze` durante el
+  cierre. Los avisos de Git sobre el archivo global de ignore no impidieron las
+  verificaciones locales.
+
 ## Límites
 
 `TRACE_JSON` es autodeclarado y no prueba exhaustividad. No editar resultados
