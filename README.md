@@ -12,13 +12,13 @@ Harness para ejecutar, conservar y analizar experimentos reproducibles sobre car
 
 ## Requisitos y configuración
 
-- Windows 10/11.
+- Windows con PowerShell.
 - Python 3.10 o posterior.
 - Codex CLI instalado y autenticado.
 - PowerShell 5.1 o posterior.
 - Repositorio fuente disponible localmente.
 
-Revisa `benchmark.config.json` antes de ejecutar. Allí se definen `source_repo`, modelo, esfuerzo, sandbox, tiempos de espera y configuración del juez. Ejecuta `doctor` en el mismo contexto de usuario que usarás para la corrida.
+Revisa `benchmark.config.json` antes de ejecutar. Allí se definen `source_repo`, modelo, esfuerzo, sandbox, tiempos de espera y configuración del juez. Ejecuta `doctor` en el mismo contexto de usuario que usarás para la corrida. `doctor` comprueba el repositorio fuente, los archivos requeridos, la disponibilidad de Codex y la autenticación.
 
 ## Uso básico
 
@@ -53,6 +53,8 @@ Los resultados agregados se regeneran en:
 - `results/summary.md`
 - `results/summary.csv`
 
+Estos archivos agregan las cohortes disponibles y se regeneran con `analyze`; no sustituyen la evidencia individual de cada corrida.
+
 Los artefactos individuales están bajo `results/`. No edites manualmente resultados crudos ni reutilices un `meta.json` existente.
 
 ## Métricas y límites
@@ -63,18 +65,17 @@ El análisis conserva, cuando Codex los informa:
 - tiempo de pared y `exit_code`;
 - `total_reported_tokens = input_tokens + output_tokens`;
 - `uncached_input_tokens = input_tokens - cached_input_tokens`;
-- `Q`, de 0 a 12, y `E_Q`, indicador interno de eficiencia de calidad.
+- `Q`, de 0 a 12, y `E_Q`, Q por cada mil tokens reportados.
 
 Las medias de cohortes pequeñas son descriptivas y no prueban causalidad ni ahorro generalizable. `TRACE_JSON` es autodeclarado y no constituye un registro exhaustivo de todos los archivos leídos o acciones realizadas.
 
 ## Documentación
 
-- [Rúbrica de calidad](docs/RUBRIC.md)
+- [Resultados agregados](results/summary.md)
 - [Contexto de continuidad](docs/CONTEXT.md)
 - [Decisiones vigentes](docs/DECISIONS.md)
 - [Handoff de reanudación](docs/HANDOFF.md)
-- [Protocolo de reanudación](docs/PROTOCOLO_REANUDACION.md)
-- [Resultados agregados](results/summary.md)
+- [Documentación histórica](docs/archivados/)
 - [Instrucciones para agentes](AGENTS.md)
 
 ## Reproducibilidad y seguridad operativa
